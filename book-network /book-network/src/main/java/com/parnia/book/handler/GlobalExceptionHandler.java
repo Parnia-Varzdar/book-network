@@ -70,7 +70,7 @@ public class GlobalExceptionHandler {
                         .build());
     }
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ExceptionHandler(Exception.class)
     public ResponseEntity<ExceptionResponse> handleException(Exception exp) {
         exp.printStackTrace();
         return ResponseEntity.status(INTERNAL_SERVER_ERROR)
