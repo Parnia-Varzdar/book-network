@@ -23,6 +23,6 @@ public class Token {
     private User user;
 
     private LocalDateTime expiresAt;
-    private LocalDateTime validateAt;
+    private LocalDateTime validatedAt;
     private LocalDateTime createdAt;
 }

@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/book_social_network
@@ -28,3 +30,11 @@ spring:
         connectiontimeout: 5000
         timeout: 3000
         writetimeout: 5000
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 86400000 # a day
+  mailing:
+    frontend:
+      activation-url: http://localhost:4200/activate-account
